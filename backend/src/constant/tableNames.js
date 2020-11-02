@@ -6,5 +6,6 @@ module.exports = {
     shape: 'shape',
     location: 'location',
     address: 'address',
-    manufacturer: 'manufacturer'
+    manufacturer: 'manufacturer',
+    size: 'size'
 }
