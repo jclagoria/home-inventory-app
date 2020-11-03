@@ -14,6 +14,6 @@ const countries = Papa.parse(cvsData, {
 module.exports = countries.data.map(
     ({name, 'alpha-2': code}) => ({
         name,
-        //code
+        code
     })
 );

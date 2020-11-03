@@ -29,18 +29,16 @@ exports.seed = async (knex) => {
         password
     }, createdUser);
 
-    const insertedCountries = await knex(tableNames.country)
-        .insert(
-            countries,
-            '*'
-        );
+    const insertedCountries = await knex(tableNames.country).insert(
+        countries,
+        '*'
+    );
 
-    /* const country_us_id = insertedCountries
-        .find((country) => country.find === 'US');
+    const usa = insertedCountries.find((country) => country.code === 'US');
 
     us_states.forEach((state) => {
-        state.country_id = country_us_id;
-    }); */
+        state.country_id = usa.id;
+    });
 
     await knex(tableNames.state).insert(us_states);
 

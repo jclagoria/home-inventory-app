@@ -13,7 +13,7 @@ const states = Papa.parse(csvData, {
 
 module.exports = states.data.map(({state: name, code}) => ({
     name,
-    //code
+    code
 }));
 
 
