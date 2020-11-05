@@ -15,7 +15,9 @@ exports.seed = async (knex) => {
         return knex(table_name).del();
     }, Promise.resolve());
 
-    const password = crypto.randomBytes(15).toString('hex');
+    //const password = crypto.randomBytes(15).toString('hex');
+
+    const password = "Shenkun#1091";
 
     const user = {
       email: 'lagoria79@yahoo.com.ar',

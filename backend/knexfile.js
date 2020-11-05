@@ -3,7 +3,6 @@ require('dotenv').config();
 module.exports = {
 
   development: {
-    debug: true,
     client: 'pg',
     connection: {
       database: process.env.POSTGRES_DB,
