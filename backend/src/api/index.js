@@ -5,6 +5,7 @@ const states =  require('./states/states.routes');
 const users = require('./users/user.routes');
 const auth = require('./auth/auth.routes');
 const address = require('./addresses/addresses.routes');
+const dbConnection = require('../dataBase');
 
 const router = express.Router();
 
@@ -18,6 +19,6 @@ router.use('/states', states);
 router.use('/users', users);
 router.use('/auth', auth);
 router.use('/address', address);
-
+//router.use(dbConnection);
 
 module.exports = router;
