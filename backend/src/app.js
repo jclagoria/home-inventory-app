@@ -4,8 +4,8 @@ const compression = require('compression');
 const helmet = require('helmet');
 
 const middlewares = require('./middelwares');
-const project = require('./constant/project');
 const api = require('./api');
+const project = require('./constant/project');
 
 const app = express();
 
