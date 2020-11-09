@@ -3,7 +3,6 @@ const { Model } = require('objection');
 
 const environment = process.env.NODE_ENV || 'development';
 const knexConfig = require('../knexfile');
-console.log('valor del env ---> ' + environment)
 
 const connectionConfig = knexConfig[environment];
 

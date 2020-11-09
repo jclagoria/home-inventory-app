@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "title": "Address",
+  "description": "The Address",
+  "required": [
+    "name",
+    "email",
+    "address_id"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The database ID of the address."
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The name of Company."
+    },
+    "logo_url": {
+      "$id": "#/properties/logo_url",
+      "type": "string",
+      "title": "The city name."
+    },
+    "description": {
+      "$id": "#/properties/description",
+      "type": "string",
+      "title": "The city name."
+    },
+    "website_url": {
+      "$id": "#/properties/website_url",
+      "type": "string",
+      "title": "The city name."
+    },
+    "email": {
+      "$id": "#/properties/email",
+      "type": "string",
+      "title": "The street address."
+    },
+    "address_id": {
+      "$id": "#/properties/address_id",
+      "type": "integer",
+      "title": "The zipcode."
+    },
+    "created_at": {
+      "$id": "#/properties/created_at",
+      "type": "string",
+      "title": "The creation date of the user."
+    },
+    "updated_at": {
+      "$id": "#/properties/updated_at",
+      "type": "string",
+      "title": "The date the user was last updated."
+    }
+  }
+}
