@@ -1,49 +1,27 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "type": "object",
-  "title": "Company",
-  "description": "The Company",
+  "title": "Item_Type",
+  "description": "The Item_Type",
   "required": [
-    "name",
-    "email",
-    "address_id"
+    "name"
   ],
   "additionalProperties": false,
   "properties": {
     "id": {
       "$id": "#/properties/id",
       "type": "integer",
-      "title": "The database ID of the address."
+      "title": "The database ID of the item type."
     },
     "name": {
       "$id": "#/properties/name",
       "type": "string",
-      "title": "The name of Company."
+      "title": "The name of item type."
     },
     "logo_url": {
       "$id": "#/properties/logo_url",
       "type": "string",
       "title": "The city name."
-    },
-    "description": {
-      "$id": "#/properties/description",
-      "type": "string",
-      "title": "The city name."
-    },
-    "website_url": {
-      "$id": "#/properties/website_url",
-      "type": "string",
-      "title": "The city name."
-    },
-    "email": {
-      "$id": "#/properties/email",
-      "type": "string",
-      "title": "The street address."
-    },
-    "address_id": {
-      "$id": "#/properties/address_id",
-      "type": "integer",
-      "title": "The zipcode."
     },
     "created_at": {
       "$id": "#/properties/created_at",
