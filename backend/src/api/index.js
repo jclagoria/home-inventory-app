@@ -10,6 +10,7 @@ const auth = require('./auth/auth.routes');
 const address = require('./addresses/addresses.routes');
 const company = require('./companies/company.routes');
 const items = require('./items/items.routes');
+const sizes = require('./size/sizes.routes');
 
 const router = express.Router();
 
@@ -25,5 +26,6 @@ router.use('/auth', auth);
 router.use('/address', address);
 router.use('/company', company);
 router.use('/items', items);
+router.use('/sizes', sizes);
 
 module.exports = router;

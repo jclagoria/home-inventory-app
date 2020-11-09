@@ -3,7 +3,6 @@ const morgan = require('morgan');
 const compression = require('compression');
 const helmet = require('helmet');
 
-
 const middlewares = require('./middelwares');
 const api = require('./api');
 const project = require('./constant/project');
