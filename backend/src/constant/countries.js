@@ -8,7 +8,8 @@ const cvsData = fs.readFileSync(
 );
 
 const countries = Papa.parse(cvsData, {
-    header: true
+    header: true,
+    skipEmptyLines: true
 });
 
 module.exports = countries.data.map(

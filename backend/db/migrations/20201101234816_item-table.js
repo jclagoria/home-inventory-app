@@ -12,11 +12,11 @@ const {
 exports.up = async (knex) => {
 
     await knex.schema.table(tableName.country, (table) => {
-        table.string('code');
+        table.string('code').notNullable();
     });
 
     await knex.schema.table(tableName.state, (table) => {
-        table.string('code');
+        table.string('code').notNullable();
         references(table, tableName.country)
     });
 

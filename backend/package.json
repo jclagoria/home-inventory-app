@@ -9,7 +9,7 @@
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
-    "test": "jest   "
+    "test": "jest"
   },
   "keywords": [],
   "author": "",

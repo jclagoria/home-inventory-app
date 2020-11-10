@@ -11,6 +11,7 @@ const address = require('./addresses/addresses.routes');
 const company = require('./companies/company.routes');
 const items = require('./items/items.routes');
 const sizes = require('./size/sizes.routes');
+const countries = require('./countries/countries.routes');
 
 const router = express.Router();
 
@@ -20,9 +21,10 @@ router.get('/', (req, res) => {
     });
 });
 
-router.use('/states', states);
-router.use('/users', users);
 router.use('/auth', auth);
+router.use('/users', users);
+router.use('/country', countries);
+router.use('/states', states);
 router.use('/address', address);
 router.use('/company', company);
 router.use('/items', items);
