@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "title": "Inventory Location",
+  "description": "The Inventory Location",
+  "required": [
+    "name"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The database ID of the Inventory Location."
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The name of the Inventory Location."
+    },
+    "description": {
+      "$id": "#/properties/description",
+      "type": "string",
+      "title": "The code of the description."
+    },
+    "image_url": {
+      "$id": "#/properties/image_url",
+      "type": "string",
+      "title": "The code of the image_url."
+    },
+    "created_at": {
+      "$id": "#/properties/created_at",
+      "type": "string",
+      "title": "The creation date of the user."
+    },
+    "updated_at": {
+      "$id": "#/properties/updated_at",
+      "type": "string",
+      "title": "The date the user was last updated."
+    }
+  }
+}

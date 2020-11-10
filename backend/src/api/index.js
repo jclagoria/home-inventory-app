@@ -12,6 +12,7 @@ const company = require('./companies/company.routes');
 const items = require('./items/items.routes');
 const sizes = require('./size/sizes.routes');
 const countries = require('./countries/countries.routes');
+const inventoryLocation = require('./inventoryLocation/inventory_location.routes');
 
 const router = express.Router();
 
@@ -29,5 +30,6 @@ router.use('/address', address);
 router.use('/company', company);
 router.use('/items', items);
 router.use('/sizes', sizes);
+router.use('/inventory_location', inventoryLocation);
 
 module.exports = router;
