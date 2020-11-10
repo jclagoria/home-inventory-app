@@ -21,22 +21,27 @@
     "description": {
       "$id": "#/properties/description",
       "type": "string",
-      "title": "The code of the description."
+      "title": "The description of the inventory location."
     },
     "image_url": {
       "$id": "#/properties/image_url",
       "type": "string",
-      "title": "The code of the image_url."
+      "title": "The image_url of the inventory location."
     },
     "created_at": {
       "$id": "#/properties/created_at",
       "type": "string",
-      "title": "The creation date of the user."
+      "title": "The creation date of the inventory location."
     },
     "updated_at": {
       "$id": "#/properties/updated_at",
       "type": "string",
-      "title": "The date the user was last updated."
+      "title": "The date the inventory location was last updated."
+    },
+    "delete_at": {
+      "$id": "#/properties/updated_at",
+      "type": "string",
+      "title": "The date the State was last updated."
     }
   }
 }

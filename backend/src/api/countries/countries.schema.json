@@ -27,12 +27,17 @@
     "created_at": {
       "$id": "#/properties/created_at",
       "type": "string",
-      "title": "The creation date of the user."
+      "title": "The creation date of the country."
     },
     "updated_at": {
       "$id": "#/properties/updated_at",
       "type": "string",
-      "title": "The date the user was last updated."
+      "title": "The date the country was last updated."
+    },
+    "delete_at": {
+      "$id": "#/properties/updated_at",
+      "type": "string",
+      "title": "The date the State was last updated."
     }
   }
 }

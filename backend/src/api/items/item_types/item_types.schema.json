@@ -21,17 +21,22 @@
     "logo_url": {
       "$id": "#/properties/logo_url",
       "type": "string",
-      "title": "The city name."
+      "title": "The logo_url of the item type."
     },
     "created_at": {
       "$id": "#/properties/created_at",
       "type": "string",
-      "title": "The creation date of the user."
+      "title": "The creation date of the item type."
     },
     "updated_at": {
       "$id": "#/properties/updated_at",
       "type": "string",
-      "title": "The date the user was last updated."
+      "title": "The date the item type was last updated."
+    },
+    "delete_at": {
+      "$id": "#/properties/updated_at",
+      "type": "string",
+      "title": "The date the State was last updated."
     }
   }
 }

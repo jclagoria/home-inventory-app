@@ -45,6 +45,11 @@
       "$id": "#/properties/updated_at",
       "type": "string",
       "title": "The date the user was last updated."
+    },
+    "delete_at": {
+      "$id": "#/properties/updated_at",
+      "type": "string",
+      "title": "The date the State was last updated."
     }
   }
 }
