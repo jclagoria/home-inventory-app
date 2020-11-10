@@ -10,7 +10,7 @@ const auth = require('./auth/auth.routes');
 const address = require('./addresses/addresses.routes');
 const company = require('./companies/company.routes');
 const items = require('./items/items.routes');
-const sizes = require('./size/sizes.routes');
+const sizes = require('./sizes/sizes.routes');
 const countries = require('./countries/countries.routes');
 const inventoryLocation = require('./inventoryLocation/inventory_location.routes');
 

@@ -23,10 +23,10 @@ exports.up = async (knex) => {
     await knex.schema.createTable(tableName.size, (table) => {
         table.increments().primary().notNullable();
         table.string('name').notNullable();
-        table.float('length').unsigned();
-        table.float('with').unsigned();
-        table.float('height').unsigned();
-        table.float('volume').unsigned();
+        table.decimal('length').unsigned();
+        table.decimal('width').unsigned();
+        table.decimal('height').unsigned();
+        table.decimal('volume').unsigned();
         references(table, tableName.shape);
         addDefaultColumns(table);
     });
@@ -39,7 +39,7 @@ exports.up = async (knex) => {
         table.string('description', 750);
         references(table, tableName.company);
         references(table, tableName.size);
-        table.text('sku', 250);
+        table.string('sku', 250);
         table.boolean('sparks_joy').defaultTo(true);
         addDefaultColumns(table);
     });
