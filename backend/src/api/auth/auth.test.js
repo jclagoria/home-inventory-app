@@ -37,3 +37,4 @@ describe('Post /api/v1/auth/login', () => {
         expect(response.body.user.id).toEqual(1);
     });
 });
+

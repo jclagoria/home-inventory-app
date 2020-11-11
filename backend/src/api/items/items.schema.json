@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "title": "Item",
+  "description": "The Item",
+  "required": [
+    "user_id",
+    "name",
+    "item_type_id",
+    "company_id",
+    "size_id"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The database ID of the Item."
+    },
+    "user_id": {
+      "$id": "#/properties/user_id",
+      "type": "integer",
+      "title": "The database user_id of the user."
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The name of the Item."
+    },
+    "item_type_id": {
+      "$id": "#/properties/item_type_id",
+      "type": "integer",
+      "title": "The Id of the Item Type."
+    },
+    "company_id": {
+      "$id": "#/properties/company_id",
+      "type": "integer",
+      "title": "The Id of the Company."
+    },
+    "size_id": {
+      "$id": "#/properties/size_id",
+      "type": "integer",
+      "title": "The Id of the Size."
+    },
+    "created_at": {
+      "$id": "#/properties/created_at",
+      "type": "string",
+      "title": "The creation date of the country."
+    },
+    "updated_at": {
+      "$id": "#/properties/updated_at",
+      "type": "string",
+      "title": "The date the country was last updated."
+    },
+    "delete_at": {
+      "$id": "#/properties/updated_at",
+      "type": "string",
+      "title": "The date the State was last updated."
+    }
+  }
+}
